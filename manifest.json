@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Civil Servant Extensions",
+    "description": "聚焦收集人事网公务员事业单位考试变动信息",
+    "version": "1.0",
+    "action": {
+        "default_popup": "hello.html",
+        "default_icon": "hello_extensions.png"
+    }
+}
