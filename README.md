@@ -6,7 +6,12 @@ Chrome extensions enhance the browsing experience by adding features and functio
 
 |              | Current utilities: |              |
 |--------------|--------------------|--------------|
-| [Reading time]() | []() | []() |
+| [预估文章阅读时长]() | [沉浸式阅读招考公告]() | [浏览器标签页管理]() |
+
+|              | 现已支持并兼容本插件的网站: |              |
+|--------------|--------------------|--------------|
+| [乐山人事网](http://www.lspta.com.cn/) | [绵阳人事网](http://www.myrsks.com.cn/) | []() |
+
 ## Installing and running Chrome Extension
 
 ### Requirements

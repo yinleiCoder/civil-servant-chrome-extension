@@ -1,10 +1,65 @@
 {
     "manifest_version": 3,
     "name": "Civil Servant Extensions",
-    "description": "聚焦收集人事网公务员事业单位考试变动信息",
     "version": "1.0",
+    "description": "聚焦收集人事网公务员事业单位考试变动信息",
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
     "action": {
-        "default_popup": "hello.html",
-        "default_icon": "hello_extensions.png"
+        "default_popup": "popup/popup.html",
+        "default_title": "聚焦收集人事网公务员事业单位考试变动信息",
+        "default_icon": {
+            "16": "images/icon-16.png",
+            "32": "images/icon-32.png",
+            "48": "images/icon-48.png",
+            "128": "images/icon-128.png"
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "tabs",
+        "contextMenus"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "http://www.lspta.com.cn/*",
+                "http://www.myrsks.com.cn/*"
+            ]
+        }
+    ],
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Q",
+                "mac": "Command+Q"
+            }
+        },
+        "flip-tabs-forward": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Right",
+                "mac": "Command+Shift+Right"
+            },
+            "description":"Flip tabs forward"
+        },
+        "flip-tabs-backwards": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Left",
+                "mac": "Command+Shift+Left"
+            },
+            "description": "Flip tabs backwards"
+        }
     }
 }

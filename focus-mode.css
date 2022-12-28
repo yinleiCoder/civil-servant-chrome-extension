@@ -1,0 +1,19 @@
+body,
+.content .contentBox {
+  background-color: rgba(52,53,65,1) !important;
+  color: white !important;
+}
+
+span,
+p {
+  color: white !important;
+}
+
+strong, h1 {
+    color: red !important;
+}
+
+div[class*="footer"], div[class*="header"], div[class*="nav"], div[class*="banner"] {
+    display: none;
+}
+
